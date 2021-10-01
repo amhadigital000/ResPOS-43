@@ -1,4 +1,4 @@
-# ResPOS-43
+# Project: Restaurant POS 2.0
 BTL Nhóm 43 / Công nghệ phần mềm / HK211/ HCMUT
 1 1915865 Lê Tuấn Uy
 2 1812612 Huỳnh Đình Quang Khải
@@ -12,9 +12,6 @@ BTL Nhóm 43 / Công nghệ phần mềm / HK211/ HCMUT
 https://docs.google.com/forms/d/e/1FAIpQLSemyVfAUHCbPG-4Yn5_IoO1POIJeQSsxIRmQCRuinNzbKiarA/viewform
 Trả lời xem ở: https://docs.google.com/spreadsheets/d/e/2PACX-1vR7Bvs_tg_1_zoRZt43KhYNAPug8E_TkE1Ezyii5a11CaXA8Co4X1VmddilCufARaMHZT_bBTCQ-6pM/pubhtml 
 
-# meet
-https://meet.google.com/kzd-yopr-goe
-
 # tasks
 (20/09) Task 1 https://www.overleaf.com/project/6138ba7e53baff6ce109bc20
 (04/10) Task 2 https://www.overleaf.com/project/61488fca594660b45e9ddab3
@@ -22,11 +19,21 @@ https://meet.google.com/kzd-yopr-goe
 (01/11)
 (15/11)
 
+# meet
+https://meet.google.com/kzd-yopr-goe
+Hanh: phụ trách meeting minute
+## meeting 1 (8/9/2021 19:00)
+## meeting 2 (22/09/2021 19:30)
+https://drive.google.com/file/d/1JSoZ1PRdBAL1zJYLS3U5KeYHvioHNRPO/view?usp=sharing
+
 # framework / tool / technology
-- HTML, CSS, JavaScript
+- Frontend: HTML, CSS, JavaScript
+- Backend: Django (Python module), SQL
 - API
     - Payment
 
 - Version Control / Project hosting: Github
 - UML Diagram: Lucidchart
 - QR Code: 
+- Text Editor: VS Code
+- Report: overleaf (LaTeX)
