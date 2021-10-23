@@ -21,14 +21,14 @@ https://docs.google.com/forms/d/e/1FAIpQLSemyVfAUHCbPG-4Yn5_IoO1POIJeQSsxIRmQCRu
 
 Trả lời xem ở: https://docs.google.com/spreadsheets/d/e/2PACX-1vR7Bvs_tg_1_zoRZt43KhYNAPug8E_TkE1Ezyii5a11CaXA8Co4X1VmddilCufARaMHZT_bBTCQ-6pM/pubhtml 
 
-# tasks
+# deadlines & tasks
 (20/09) Task 1 https://www.overleaf.com/project/6138ba7e53baff6ce109bc20
 
 (04/10) Task 2 https://www.overleaf.com/project/61488fca594660b45e9ddab3
 
-(18/10)
+(18/10) Task 3 https://www.overleaf.com/6269289279dkmpjcvchvyb
 
-(01/11)
+(01/11) Task 4 https://www.overleaf.com/8459186266gwcckqrnhvbz
 
 (15/11)
 
@@ -36,14 +36,14 @@ Trả lời xem ở: https://docs.google.com/spreadsheets/d/e/2PACX-1vR7Bvs_tg_1
 # meet
 https://meet.google.com/kzd-yopr-goe
 
-Hanh: phụ trách meeting minute
+Khả: phụ trách meeting minute
 
 ## meeting 1 (8/9/2021 19:00)
 ## meeting 2 (22/09/2021 19:30)
 https://drive.google.com/file/d/1JSoZ1PRdBAL1zJYLS3U5KeYHvioHNRPO/view?usp=sharing
 
 # framework / tool / technology
-- Frontend: HTML, CSS, JavaScript
+- Frontend: HTML, CSS, Bootstrap
 - Backend: Django (Python module), SQL
 - API
     - Payment
