@@ -36,12 +36,11 @@ Trả lời xem ở: https://docs.google.com/spreadsheets/d/e/2PACX-1vR7Bvs_tg_1
 # meet
 https://meet.google.com/kzd-yopr-goe
 
-Khả: phụ trách meeting minute
-
 ## meeting 1 (8/9/2021 19:00)
 ## meeting 2 (22/09/2021 19:30)
 https://drive.google.com/file/d/1JSoZ1PRdBAL1zJYLS3U5KeYHvioHNRPO/view?usp=sharing
-
+## meeting 3 
+https://drive.google.com/file/d/1Bf2h6VIQO7YoZInKRyNFhESgmnbinjps/view?fbclid=IwAR3O8iWrTp5zrNIN9X4tHSlw3WkNbk5VHW_MWSvtLlr_bNPfawoi34Nzouk
 # framework / tool / technology
 - Frontend: HTML, CSS, Bootstrap
 - Backend: Django (Python module), SQL
