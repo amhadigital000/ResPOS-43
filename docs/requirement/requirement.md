@@ -78,36 +78,39 @@
       - Nếu khách thay đổi dữ liệu trong giỏ hàng theo ý mình (thay đổi số lượng sản phẩm), special deal sẽ không còn hiệu lực. Order đó được tính như order bình thường.
 
 3. **Chức năng giỏ hàng (cart)   **
-   Thêm/Xóa/Sửa số lượng sản phẩm trong giỏ hàng đã lựa từ menu.
-   Xem Total price ở dưới cùng
+
+Thêm/Xóa/Sửa số lượng sản phẩm trong giỏ hàng đã lựa từ menu.
+
+Xem Total price ở dưới cùng
 
 4. **Tạo đơn hàng (order): **
-   Chỉ có 2 lựa chọn -  đặt bàn sẵn **HOẶC** mang về
 
-   - Nếu đặt bàn sẵn - ăn tại chỗ `dine in`, phải nhập:
+Chỉ có 2 lựa chọn -  đặt bàn sẵn **HOẶC** mang về
 
-      - Số bàn: 1-10
+- Nếu đặt bàn sẵn - ăn tại chỗ `dine in`, phải nhập:
 
-      - Số người dùng một bàn: 1-5
+   - Số bàn: 1-10
 
-      - Thời gian có thể dùng bữa tại chỗ trong 1 ngày: 7am - 11pm (16 tiếng)
+   - Số người dùng một bàn: 1-5
 
-         - Hệ thống recommend khung giờ còn trống của nhà hàng
+   - Thời gian có thể dùng bữa tại chỗ trong 1 ngày: 7am - 11pm (16 tiếng)
 
-         - Thời lượng dùng bữa tối đa: 
+      - Hệ thống recommend khung giờ còn trống của nhà hàng
 
-            | Nếu khách           | Max Duration |
-            | ------------------- | ------------ |
-            | Đặt ít hơn 2 bàn    | 2 tiếng      |
-            | Đặt 3 - 5 bàn       | 3 tiếng      |
-            | Đặt nhiều hơn 6 bàn | 4 tiếng      |
+      - Thời lượng dùng bữa tối đa: 
 
-   - Nếu Mang về `take away`, phải nhập:
-     - Họ tên / SĐT / Địa chỉ 
-     - Thời gian dự tính cần nhận sản phẩm (ngày - giờ): hệ thống recommend
-     - Ghi chú thêm cho đơn hàng: tối đa 2000 kí tự
-     
-   - Nếu đơn chưa được xác nhận bởi nhân viên, khách được lựa chọn **hủy đơn**
+         | Nếu khách           | Max Duration |
+         | ------------------- | ------------ |
+         | Đặt ít hơn 2 bàn    | 2 tiếng      |
+         | Đặt 3 - 5 bàn       | 3 tiếng      |
+         | Đặt nhiều hơn 6 bàn | 4 tiếng      |
+
+- Nếu Mang về `take away`, phải nhập:
+  - Họ tên / SĐT / Địa chỉ 
+  - Thời gian dự tính cần nhận sản phẩm (ngày - giờ): hệ thống recommend
+  - Ghi chú thêm cho đơn hàng: tối đa 2000 kí tự
+  
+- Nếu đơn chưa được xác nhận bởi nhân viên, khách được lựa chọn **hủy đơn**
 
 ## 1.5. Chức năng thu thập phản hồi
 
