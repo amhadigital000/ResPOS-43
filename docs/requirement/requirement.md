@@ -55,7 +55,7 @@
 ## 1.4. Chức năng xem menu, đặt hàng
 
 1. **Chức năng xem thực đơn (menu)**
-   
+  
    - Trình bày sản phẩm theo dạng lưới ô vuông: tên sản phẩm - hình minh họa - giá - nút thêm vào giỏ
      - Những sản phẩm hết hàng thì sẽ được đánh dấu OUT OF STOCK
      - Có popup xem chi tiết của sản phẩm trước khi thêm vào giỏ hàng
@@ -106,6 +106,8 @@
      - Họ tên / SĐT / Địa chỉ 
      - Thời gian dự tính cần nhận sản phẩm (ngày - giờ): hệ thống recommend
      - Ghi chú thêm cho đơn hàng: tối đa 2000 kí tự
+     
+   - Nếu đơn chưa được xác nhận bởi nhân viên, khách được lựa chọn **hủy đơn**
 
 ## 1.5. Chức năng thu thập phản hồi
 
@@ -124,7 +126,7 @@ Chức năng này chỉ có sẵn khi trong giỏ hàng của khách có ít nh�
 2. **Phương thức thanh toán**
 
 - Thẻ thanh toán quốc tế
-  - Visa/Mastercard
+  - Visa/Mastercard (Không lưu trữ thông tin thẻ)
 - Ví điện tử
   - Quét mã QR (MoMo)
 - Tiền mặt (hệ thống tự ghi nhận nếu khách chọn `dine in`, nên không có trong giao diện thanh toán)
@@ -135,6 +137,28 @@ Chức năng này chỉ có sẵn khi trong giỏ hàng của khách có ít nh�
 
 1. Thiết bị sử dụng: hệ thống phải hiển thị và thao tác tốt trên máy tính bảng, điện thoại, laptop, máy tính để bàn
 
+## 2.2. Hiệu quả
 
+1. Hỏi xác nhận lại (Y/N) trước các thao tác đặt hàng, hủy đơn.
+2. Liên tục cập nhật dữ liệu của hệ thống: 30 giây/lần
+3. Làm tốt các yêu cầu chức năng của hệ thống với ít lỗi nhất có thể.
+4. Dễ dàng lắp đặt, vận hành, nâng cấp và bảo trì ở nhiều nhà hàng.
 
-Đáp ứng ít nhất 300 đơn / ngày
+## 2.3. Hiệu suất
+
+1. Thời gian hệ thống phản hồi nhanh (delay nhiều nhất là 5s).
+2. Hoạt động tốt trong khung giờ nhà hàng mở cửa (7am - 11pm).
+3. Sức làm việc: 
+   - Đáp ứng ít nhất 300 đơn/ngày (300 users cùng lúc).
+   - Lưu trữ được nhiều dự liệu giao dịch: khoảng 6 tháng -1 năm, mà không bị quá tải hay mất mát dữ liệu.
+
+## 2.4. Thân thiện người dùng
+
+1. Người dùng thông thường chỉ mất khoảng 5 phút để làm quen.
+2. UI: đúng theo figure 2, 3. Có chút sửa đổi cho đơn giản và phù hợp.
+
+## 2.5. Bảo mật
+
+1. Mật khẩu các loại được hash bằng MD5
+2. Không lưu trữ thông tin về thẻ tín dụng
+

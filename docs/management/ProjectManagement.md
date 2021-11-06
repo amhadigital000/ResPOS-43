@@ -1,16 +1,16 @@
 # Phân công nhiệm vụ
 
-| Task                 | Tuấn Uy                    | Quang Khải        | Đình Khả                       | Thành Đạt            | Phương Điền        | Ngọc Hanh          |
-| -------------------- | -------------------------- | ----------------- | ------------------------------ | -------------------- | ------------------ | ------------------ |
-| Xác định Requirement | Chức năng quản lí          | Chức năng quản lí | Chức năng phản hồi, thanh toán | Chức năng thanh toán | Chức năng đặt hàng | Chức năng đặt hàng |
-|                      | Functional requirement     |                   |                                |                      |                    |                    |
-|                      | Non-functional requirement |                   |                                |                      |                    |                    |
-|                      |                            |                   |                                |                      |                    |                    |
-|                      |                            |                   |                                |                      |                    |                    |
-|                      |                            |                   |                                |                      |                    |                    |
-|                      |                            |                   |                                |                      |                    |                    |
-|                      |                            |                   |                                |                      |                    |                    |
-|                      |                            |                   |                                |                      |                    |                    |
+| Công việc                       | Tuấn Uy                             | Quang Khải                          | Đình Khả                                 | Thành Đạt                               | Phương Điền              | Ngọc Hanh                |
+| ------------------------------- | ----------------------------------- | ----------------------------------- | ---------------------------------------- | --------------------------------------- | ------------------------ | ------------------------ |
+| **Xác định Requirement**        | Chức năng quản lí                   | Chức năng quản lí                   | Chức năng phản hồi, thanh toán           | Chức năng thanh toán                    | Chức năng đặt hàng       | Chức năng đặt hàng       |
+|                                 | Viết báo cáo task 1                 |                                     |                                          |                                         | Vẽ Use case diagram      |                          |
+| **Thiết kế hệ thống**           | Activity Diagram: quản lý           | Góp ý chỉnh sửa Activity diagram    | Activity Diagram: đặt hàng và thanh toán | Activity Diagram: quản lý và thanh toán |                          |                          |
+|                                 | Class diagram: vẽ 50%               | Class diagram: vẽ 50%               |                                          |                                         |                          |                          |
+|                                 | Viết báo cáo task 2                 |                                     |                                          |                                         | Sequence diagram: vẽ 30% | Sequence diagram: vẽ 70% |
+| **Thiết kế kiến trúc hệ thống** | Vẽ component Quản lý và mô hình MVC | Vẽ component Quản lý và mô hình MVC | Vẽ component Thanh toán                  | Vẽ component Thanh toán                 | Vẽ component Đặt hàng    | Vẽ component Đặt hàng    |
+|                                 |                                     |                                     |                                          |                                         |                          |                          |
+|                                 |                                     |                                     |                                          |                                         |                          |                          |
+|                                 |                                     |                                     |                                          |                                         |                          |                          |
 
 
 
