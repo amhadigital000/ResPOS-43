@@ -1,4 +1,16 @@
-# Phân công nhiệm vụ - thời gian
+# Phân công nhiệm vụ
+
+| Task                 | Tuấn Uy                    | Quang Khải        | Đình Khả                       | Thành Đạt            | Phương Điền        | Ngọc Hanh          |
+| -------------------- | -------------------------- | ----------------- | ------------------------------ | -------------------- | ------------------ | ------------------ |
+| Xác định Requirement | Chức năng quản lí          | Chức năng quản lí | Chức năng phản hồi, thanh toán | Chức năng thanh toán | Chức năng đặt hàng | Chức năng đặt hàng |
+|                      | Functional requirement     |                   |                                |                      |                    |                    |
+|                      | Non-functional requirement |                   |                                |                      |                    |                    |
+|                      |                            |                   |                                |                      |                    |                    |
+|                      |                            |                   |                                |                      |                    |                    |
+|                      |                            |                   |                                |                      |                    |                    |
+|                      |                            |                   |                                |                      |                    |                    |
+|                      |                            |                   |                                |                      |                    |                    |
+|                      |                            |                   |                                |                      |                    |                    |
 
 
 
