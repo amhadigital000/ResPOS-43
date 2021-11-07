@@ -1,8 +1,0 @@
-"Cart" by Ha Phuong Dien - 1913106 and Nguyen Ngoc Hanh - 1610851
-
-
-include "home" by Le Tuan Uy - 1915865
-
-
-
-Still error in "total cost"
