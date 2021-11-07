@@ -1,0 +1,426 @@
+/**************DEFAULT**************************************************/
+:root{
+    scroll-behavior: smooth;
+}
+
+*{  
+    margin:auto;
+    padding:auto;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+.row{ 
+    margin:0px;
+}
+
+body{ 
+    font-family:Arial, Helvetica, sans-serif; 
+    margin:none;
+    padding:none;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body, html {
+    height: 100%;
+}
+/**************NAV BAR******************/
+.navbar{
+    background-color:white; 
+    border-radius: 0;
+    position: relative;
+}
+
+.navbar-toggler{
+    background-color: red;
+}
+
+.navbar-toggler:hover{
+    background-color:darkred;
+}
+.navbar-brand{
+    margin:auto;
+}
+/*
+.form-inline{
+    display:flex;
+    width:50%;
+    height:auto;
+    position:relative;
+    margin-right: 0;
+}
+
+
+.shopping-cart-navbar{
+    position: inherit;
+}
+.shopping-cart-icon{
+    border-radius: 100%;
+    color:red;
+    background-color:white;
+    font-size:20px;
+    border:none;
+}
+.shopping-cart-icon:hover{
+    background-color: red;
+    color:white;
+}
+*/
+.navbar-toggler{
+    margin-right: 10px;
+}
+.navbar-collapse .navbar-nav{
+    display:flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.navbar-collapse .navbar-nav .nav-item{
+    background-color:transparent;
+}
+
+.navbar-collapse .navbar-nav .nav-item .nav-link:hover{
+    color:blue;
+}
+
+/*************HOME HEADER********************/
+.header{ 
+    padding:10px 0px; 
+    background:url(../images/home-bg.jpg);  
+    background-attachment:fixed; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 100%;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    display:flex;
+}
+
+
+.header-bottom{ 
+    padding:75px 0px 20px;
+    align-content: center;
+    align-items: center;
+    position: absolute;
+}
+.header-font{ 
+    color:#FFF; 
+    text-align:center; 
+    font-size:48px; 
+    text-transform:uppercase; 
+    font-weight:bold; 
+    padding:0px;
+    margin-bottom: 60px;
+}
+.header-font span{
+    font-family: 'Brush Script MT', cursive;
+    color:blue;
+}
+.header-btns{ 
+    color:blue; 
+    font-size:16px; 
+    font-weight:500; 
+    border:1px solid blue; 
+    padding:10px 30px; 
+    text-decoration:none; 
+    border-radius:2px;
+    margin-top: 20px;
+}
+.header-btns:hover{ 
+    background:blue; 
+    color:#FFF; 
+    border:1px solid blue; 
+    text-decoration:none;
+}
+
+/********START MENU***********/
+section{
+    padding:1rem 9%;
+}
+
+section:nth-child(even){
+    background:#eee;
+}
+
+.menu .box-container .box .content .btn{
+    background: red;
+    width: 40%;
+    font-size:1.0rem;
+}
+.menu .box-container .box .content .btn:hover{
+    background: darkred;
+}
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 0.5fr));
+    grid-gap:1.5rem;
+    align-items:center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.menu .box-container .box{
+    background: #fff;
+    border:.1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);    
+    text-align: center;
+}
+/*********FILTER***********/
+.menu .box-container{
+    overflow: hidden;
+}
+.menu .box-container .box{
+    display:none;
+}
+.menu .box-container .show{
+    display:block;
+    height: 248.51px;
+    width: 173.95px;
+}
+.menu .FilterContainer{
+    margin-bottom:10px;
+    text-align: left;
+}
+.menu .FilterContainer .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+  
+.menu .FilterContainer .btn:hover {
+    background-color: #ddd;
+}
+
+.menu .FilterContainer .btn.active {
+    background-color: #666;
+    color: white;
+}
+/*********END FILTER****************/
+
+.menu .box-container .box{
+    cursor: pointer;
+}
+.menu .box-container .box .image{
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.menu .box-container .box .content{
+    padding: 10px;
+    padding-top:0px;
+}
+.menu .box-container .box .content h3{
+    color:black;
+    font-size: 2rem;
+    text-align: center;
+}
+.menu .box-container .box .content.bot-content{
+    display:flex;
+    justify-content: auto;
+    padding-bottom: 0px;
+}
+
+.menu .box-container .box .content .price{
+    color:black;
+    font-size: 2.0rem;
+}
+/********END MENU***********/
+
+
+/********START POPUP*****************/
+.modal-header {
+    margin: 0px;
+    padding: 10px;
+}
+.modal-header .modal-title{
+    margin-left: 0px;
+    font-size: 1rem;
+}
+.modal-header .close{
+    font-size: 0.8rem;
+}
+.modal-footer{
+    padding: 10px;
+    margin: 0px;
+    justify-content: center;
+}
+.modal-body{
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.modal-body .img-container{
+    /* float: left; */
+}
+.modal-body .img-container img{
+    width: 130px;
+    height: 130px;
+}
+.modal-body .main-content{
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+}
+.modal-body .main-content .food-name span{
+    /* float:left; */
+}
+.modal-body .main-content .food-price span{
+    /* float:left; */
+}
+.modal-body .main-content .food-quantity span{
+    /* float:left; */
+    /* padding-top: 11px; */
+}
+.modal-body .main-content .food-quantity .form-control{
+    padding: 0.25rem;
+    border: none;
+}
+.modal-body .main-content .btn{
+    font-size: 10px;
+}
+.modal-body .main-content .food-quantity .form-control input{
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+    width: 30px;
+    height: 30px;
+}
+
+/***** Inserted css for modal ****/
+.modal-body .food-content-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    margin-bottom: 7px;
+}
+.food-attribute{
+    margin: 0 auto;
+    padding-right: 7px;
+}
+
+/****** End inserted css****/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+}
+.modal-body .main-content .food-information span{
+    float:left;
+}
+.modal-body .main-content .food-ingredients span{
+    float:left;
+}
+
+/********END POPUP*****************/
+
+
+
+
+
+/****** Start Footer ********/
+.footer-bottom{padding:15px; text-align:center; color:#FFF; font-size:13px; background:#000;}
+/****** End Footer ********/
+
+  
+/****** Extend Edition ******/
+
+.prices-field{
+    margin-top: 7px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price{
+    font-size: 14px;
+    font-weight: 700;
+    color: #bb2d3b;
+}
+
+.customize-card{
+    margin-bottom: 10px;
+}
+/****** End Extend Edition ******/
+
+
+/****** Extend Order Field *******/
+
+.cart-item{
+    margin: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 7px;
+    width: 270px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item-header{
+    margin: 7px 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.cart-item-detail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-item-img{
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    margin-right: 30px;
+}
+
+.cart-item-detail-field{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.custom-size-image{
+    display: flex;
+    align-items: center;
+    width: 13rem;
+    height: 13rem;
+}
+
+.no-decoration-field{
+    text-decoration: none;
+}
+
+.total-cart-item-field{
+    margin-left: 13px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #dc3545;
+}
+
+
+/****** End Extend Order Field *******/
