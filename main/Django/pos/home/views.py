@@ -88,9 +88,10 @@ def index(request):
     context['cart'] = cart
     total_item = len(cart)
     context['total_item'] = total_item
+    total_price = 0
     if total_item > 0:
         total_price = [int(x['quantity']) * int(x['unit_price']) for x in cart]
-        total_price = sum(total_price)
+        total_price = sum(total_price)    
     context['total_price'] = total_price
     print(cart)
     return render(request, 'pages/home.html', context)
