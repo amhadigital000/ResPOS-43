@@ -1,2 +1,4 @@
 1. Mở terminal
-2. Vào thư mục ResPOS-43/main/Djangopos
+2. Từ terminal đi vào thư mục ResPOS-43/main/Django/pos
+3. Gõ lệnh: python manage.py runserver để chạy
+4. Mở trình duyệt vào đường dẫn gõ: "localhost:8080"
