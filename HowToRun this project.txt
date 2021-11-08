@@ -1,0 +1,2 @@
+1. Mở terminal
+2. Vào thư mục ResPOS-43/main/Djangopos
