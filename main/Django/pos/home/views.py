@@ -20,7 +20,7 @@ menu = [
     Food(3, 'Chocolate Cake', 30000, "./static/images/dish-3.png", "dessert"),
     Food(4, 'Pizza', 40000, "./static/images/dish-4.png", "food"),
     Food(5, 'Turkey', 50000, "./static/images/dish-5.png", "special"),
-    Food(6, 'Fried Chicken', 60000, "./static/images/dish-6.png", "food")
+    Food(6, 'Fried Chicken', 55000, "./static/images/dish-6.png", "food")
 ]
 
 
