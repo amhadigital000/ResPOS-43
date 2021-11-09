@@ -29,8 +29,6 @@
 
 - manager và clerk: được chuyển hướng sang giao diện chức năng của họ.
 
-
-
 2. **Khôi phục mật khẩu (quên mật khẩu)**
 
 ## 1.2. Chức năng của quản lý
