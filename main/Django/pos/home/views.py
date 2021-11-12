@@ -86,7 +86,12 @@ def index(request):
         cart = [x for x in cart if len(x) == 5]
 
     context['cart'] = cart
-    total_item = len(cart)
+    # fix total_item = sum quantity
+    total_item = 0
+    if(len(cart) != 0):
+        total_item = [int(x['quantity']) for x in cart]
+        total_item = sum(total_item)
+        
     context['total_item'] = total_item
     total_price = 0
     if total_item > 0:
