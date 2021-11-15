@@ -4,6 +4,7 @@ Môn: Công nghệ phần mềm / HK211
 Nhóm 43 - Bài tập lớn
 ---
 
+<<<<<<< HEAD
 # Danh sách thành viên
 
 | STT  | Họ tên                | MSSV        |
@@ -15,6 +16,7 @@ Nhóm 43 - Bài tập lớn
 | 5    | Hà Phương Điền        | 1913106     |
 | 6    | Nguyễn Ngọc Hanh      | 1610851     |
 | 7    | ~~Mai Huỳnh Hữu Tín~~ | ~~1713505~~ |
+=======
 
 # POS 2.0
 
