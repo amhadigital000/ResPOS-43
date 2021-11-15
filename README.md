@@ -7,8 +7,12 @@ Nhóm 43 - Bài tập lớn
 ~~~
 Danh sách thành viên
 
-~ Huỳnh Anh Đào - 1810007
-~
+~ Huỳnh Đình Quang Khải - 1812612
+~ Lê Tuấn Uy - 1915865
+~ Hà Phương Điền - 1913106
+~ Thái Đình Khả - 1913763
+~ Nguyễn Thành Đạt - 2012938
+~ Nguyễn Ngọc Hanh - 1610851
 
 ~~~
 
