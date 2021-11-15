@@ -4,15 +4,17 @@ Môn: Công nghệ phần mềm / HK211
 Nhóm 43 - Bài tập lớn
 ---
 
-~~~
-Danh sách thành viên
+# Danh sách thành viên
 
-~ Huỳnh Anh Đào - 1810007
-~
-
-~~~
-
-
+| STT  | Họ tên                | MSSV        |
+| ---- | --------------------- | ----------- |
+| 1    | Lê Tuấn Uy            | 1915865     |
+| 2    | Huỳnh Đình Quang Khải | 1812612     |
+| 3    | Thái Đình Khả         | 1913763     |
+| 4    | Nguyễn Thành Đạt      | 2012938     |
+| 5    | Hà Phương Điền        | 1913106     |
+| 6    | Nguyễn Ngọc Hanh      | 1610851     |
+| 7    | ~~Mai Huỳnh Hữu Tín~~ | ~~1713505~~ |
 
 # POS 2.0
 
@@ -35,6 +37,7 @@ mang đi hay tại chỗ cho khách hàng, responsive, và dễ sử dụng.
 
 Toàn bộ những mô tả và thiết kế về hệ thống được đặt trong thư mục [docs](./docs).
 Bao gồm:
+
 - Task 1: Lược đồ use-case, use-case scenario, yêu cầu chức năng, phi chức năng, và các mô tả khác về hệ thống.
 - Task 2: Lược đồ hoạt động (activity diagram), lược đồ tuần tự (sequence diagram).
 - Task 3: Lược đồ lớp (class diagram), lược đồ thành phần (component diagram).
@@ -51,6 +54,8 @@ Ngoài ra, văn bản ghi lại các cuộc họp hàng tuần (meeting minutes)
 
 Toàn bộ phần code của ứng dụng được đặt trong thư mục [main](./main)
 
+*Lưu ý: Folder Home và Cart là 2 folder riêng lẻ làm từ HTML, CSS, JS. Folder Django/pos là folder chính và được tổng hợp, chỉnh sửa từ 2 folder trên*
+
 
 ## Chạy ứng dụng trên web
 Để có thể chạy được ứng dụng hiện tại trên trình duyệt, cần phải cài đặt môi trường python và framework Django:
@@ -63,11 +68,8 @@ Tạo môi trường ảo là tùy chọn, có thể không cần tạo cũng đ
 pip install django
 ```
 
-Sau khi đã cài đặt đủ mọi thứ, đi đến thư mục [pos](./main/Django/pos) nằm trong thư mục [main/Django](./main/Django) và gõ lệnh sau trên command line
-hay terminal.
+Sau khi đã cài đặt đủ mọi thứ, đi đến thư mục [pos](./main/Django/pos) nằm trong thư mục [main/Django](./main/Django) và gõ lệnh sau trên command line hay terminal.
 ```
-python manage.py runserver
+py manage.py runserver
 ```
-Cuối cùng, mở trình duyệt và truy cập vào _'localhost:8000'_.
-
-
+Cuối cùng, mở trình duyệt và truy cập vào `localhost:8000` hay `http://127.0.0.1:8000/`

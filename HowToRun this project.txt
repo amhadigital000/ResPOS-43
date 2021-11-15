@@ -1,5 +1,0 @@
-1. Mở terminal
-2. Từ terminal đi vào thư mục ResPOS-43/main/Django/pos
-3. Gõ lệnh: "python manage.py runserver" để chạy server
-4. Mở trình duyệt vào đường dẫn gõ: "localhost:8080"
-#Lưu ý: Folder Home và Cart là 2 folder riêng lẻ làm từ HTML, CSS, JS. Folder Django/pos là folder chính và được tổng hợp, chỉnh sửa từ 2 folder trên
