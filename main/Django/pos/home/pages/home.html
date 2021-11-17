@@ -78,9 +78,15 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Giới thiệu</a>
           </li>
+          {% if user.is_authenticated %}
           <li class="nav-item">
-            <a class="nav-link" href="#">Đăng nhập</a>
+            Hi {{ user.username }}! <a class="nav-link" href="{% url 'logout' %}">Đăng xuất</a>
           </li>
+          {% else %}
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'login' %}">Đăng nhập</a>
+          </li>
+          {% endif %}
         </ul>
       </div>
     </nav>
