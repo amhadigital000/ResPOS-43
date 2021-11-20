@@ -1,6 +1,7 @@
 from django.http import request
 from django.shortcuts import redirect, render
 from django.core import serializers
+from django.http import HttpResponse, HttpResponseRedirect
 # Create your views here.
 
 
@@ -67,6 +68,23 @@ def add_to_cart(request):
 
     return redirect('/')
 
+def change_order_type(request):
+    if request.method == "POST":
+        order_type = request.session.get('order_type')
+        if not order_type:
+            order_type = "DINE IN"
+            request.session['order_type'] = order_type
+        elif order_type == "DINE IN":
+            order_type = "TAKE AWAY"
+            request.session['order_type'] = order_type
+        elif order_type == "TAKE AWAY":
+            order_type = "DINE IN"
+            request.session['order_type'] = order_type
+    
+        next = request.POST.get('path', '/')
+        print(next)
+        return HttpResponseRedirect(next)
+    return redirect('/')
 
 def index(request):
     context = {}  # dictionary
@@ -78,12 +96,19 @@ def index(request):
         
     context['menu'] = list_food
 
+    order_type = request.session.get('order_type')
+    if not order_type:
+        order_type = "DINE IN"
+        request.session['order_type'] = order_type
+    context['order_type'] = order_type
+
     cart = request.session.get('cart')
     if not cart:
         cart = []
     # del request.session['cart']
     if (len(cart) != 0):
         cart = [x for x in cart if len(x) == 5]
+
 
     context['cart'] = cart
     # fix total_item = sum quantity
@@ -100,3 +125,9 @@ def index(request):
     context['total_price'] = total_price
     print(cart)
     return render(request, 'pages/home.html', context)
+
+def payment_visa(request):
+    return render(request, 'pages/payment-visa.html')
+
+def payment_momo(request):
+    return render(request, 'pages/payment-momo.html')

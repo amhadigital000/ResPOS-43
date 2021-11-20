@@ -37,11 +37,16 @@ function MenuRemoveClass(element, name) {
 }
 
 // Add active class to the current control button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
+// var btnContainer = document.getElementById("myBtnContainer1");
+// btnContainer = document.getElementsByClassName("FilterContainer");
+// var btns = btnContainer.getElementsByClassName("btn");
+var btns = document.getElementsByClassName("btn-filter-option");
+console.log(btns)
 for (var i = 0; i < btns.length; i++) {
+  console.log(btns.length)
   btns[i].addEventListener("click", function() {
     var current = document.getElementsByClassName("active");
+    console.log(current)
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });

@@ -316,7 +316,26 @@ section:nth-child(even){
     margin: 0 auto;
     padding-right: 7px;
 }
+.card-header-field{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.card-order-header{
+    margin-left: 0;
+    margin-bottom: 0;
+}
+.order-type-btn-form{
+    margin-right: 0;
+}
 
+.menu-field .box{
+    display: none;
+}
+.menu-field .show{
+    display: block;
+}
 /****** End inserted css****/
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {

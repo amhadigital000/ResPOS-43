@@ -55,7 +55,7 @@
       crossorigin="anonymous"
     ></script>
     <!--custom JS-->
-    <script type="text/javascript" src="{% static 'js/script.js'%}"></script>
+    
   </head>
 
   <body>
@@ -128,41 +128,32 @@
     <section class="menu" id="menu">
       <h1 class="sub-heading" align="center">MENU</h1>
 
-      <div class="FilterContainer" id="myBtnContainer">
-        <a href="/" class="no-decoration-field">
-          <button class="btn active" onclick="filterSelection('all')">
-            Show All
-          </button>
-        </a>
+      <div class="FilterContainer" id="myBtnContainer1">
+        <button class="btn btn-filter-option active" onclick="filterSelection('all')">
+          Show All
+        </button>
         
-        <a href="/?filter=food" class="no-decoration-field">
-          <button class="btn" onclick="filterSelection('food')">Food</button>
-        </a>
+        <button class="btn btn-filter-option" onclick="filterSelection('food')">Food</button>
 
-        <a href="/?filter=drink" class="no-decoration-field">
-          <button class="btn" onclick="filterSelection('drink')">Drink</button>
-        </a>
-        <a href="/?filter=dessert" class="no-decoration-field">
-          <button class="btn" onclick="filterSelection('dessert')">
-            Dessert
-          </button>
-        </a>
+        <button class="btn btn-filter-option" onclick="filterSelection('drink')">Drink</button>
 
-        <a href="/?filter=special" class="no-decoration-field">
-          <button class="btn" onclick="filterSelection('special')">
-            Special
-          </button>
-        </a>
+        <button class="btn btn-filter-option" onclick="filterSelection('dessert')">
+          Dessert
+        </button>
+
+        <button class="btn btn-filter-option" onclick="filterSelection('special')">
+          Special
+        </button>
       </div>
     </section>
     <!--End Menu-->
 
-    <div class="container">
+    <div class="container menu-field">
       <div class="row">
         <div class="col-sm-8 col-md-8">
           <div class="row align-items-start">
             {% for food in menu %}
-            <div class="col">
+            <div class="col {{food.type}} box">
               <div class="card customize-card" style="width: 13.5rem">
                 <div class="custom-size-image">
                   <img src="{{food.imglink}}" class="card-img-top" alt="..." />
@@ -184,6 +175,7 @@
                         data-price="{{ food.price }}"
                         data-description="{{ food.description }}"
                         data-name="{{ food.title }}"
+                        data-type="{{ food.type }}"
                       >
                         <button class="btn btn-danger fas fa-shopping-cart">
                           <!--onclick="event.stopPropagation();"-->
@@ -202,7 +194,14 @@
         <div class="col-sm-4" , id="cart">
           <div class="card cart-field">
             <div class="card-body">
-              <h5>ORDER</h5>
+              <div class="card-header-field">
+                <h5 class="card-order-header">ORDER</h5>
+                <form action="/change-order-type" method="post" class="order-type-btn-form">
+                  {% csrf_token %}
+                  <input type="hidden" name="path" value="{{request.path}}">
+                  <input type="submit" name="order-type" value="{{order_type}}" class="btn btn-secondary btn-sm">
+                </form>
+              </div>
               <hr />
               {% for item in cart %}
               <div class="cart-item">
@@ -246,9 +245,7 @@
                 <div class="total-price">Total Price: {{total_price}}</div>
               </div>
               <hr />
-          
-                
-                <button type="button" class="btn btn-primary btn-lg w-100" data-toggle="modal" data-target="#paymodal">
+              <button type="button" class="btn btn-primary btn-lg w-100" data-toggle="modal" data-target="#paymodal">
                 CHECK OUT
              </button>
              <div class="modal" id="paymodal">
@@ -261,16 +258,16 @@
                     </div>
                     <!-- Modal body -->
                     <div class="modal-body">
-                     <a id="momopay" href="momo.html" type="button" class="btn btn-light" ><img src="image/momobut.png" width="120px" height="100px"></a>
-                     <a id="visapay" href="Visa.html" type="button" class="btn btn-light"><img src="image/visabut.png" width="120px" height="100px"></a>
+                     <a id="momopay" href="payment/momo" type="button" class="btn btn-light" ><img src="{%static 'images/payment/momobut.png'%}" width="120px" height="100px"></a>
+                     <a id="visapay" href="payment/visa" type="button" class="btn btn-light"><img src="{%static 'images/payment/visabut.png'%}" width="120px" height="100px"></a>
                     </div>
                  </div>
               </div>
            </div>
      
-           <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+           <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
            
             </div>
           </div>
@@ -416,5 +413,6 @@
       </div>
     </div>
     <!--End Footer-->
+    <script type="text/javascript" src="{% static 'js/script.js'%}"></script>
   </body>
 </html>

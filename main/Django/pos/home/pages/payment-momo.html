@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MoMo</title>
-    <link rel="stylesheet" href="css/pay.css">
+    <link rel="stylesheet" href="{% static 'css/pay.css'%}">
     
 </head>
 <body>
     <main id="main">
         <section id="left">
           <div id="head">
-            <img src="image/logomomo.png" width="100"> 
+            <img src="{%static 'images/payment/logomomo.png'%}" width="100"> 
             <h1>Thanh toán MoMo</h1>
           </div>
-          <h3><img src="image/QRicon.png" width="15px"> Sử dụng App MoMo hoặc ứng dụng Camera hỗ trợ QR code để quét mã.</h3>
+          <h3><img src="{%static 'images/payment/QRicon.png'%}" width="15px"> Sử dụng App MoMo hoặc ứng dụng Camera hỗ trợ QR code để quét mã.</h3>
         </section>
         <section id="momo">
           <form action="#">
-            <img src="image/QR.png" >
+            <img src="{%static 'images/payment/QR.png'%}" >
           </form>
         </section>
       </main>
