@@ -3,6 +3,19 @@
   <head>
     {% load static %}
     <title>Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <style>
+         .modal-body{
+            display: flex;
+            justify-content: center;
+         }
+         #momopay{
+            margin: 10px 30px 10px 10px;
+         }
+         #visapay{
+            margin: 10px 10px 10px 30px;
+         }
+      </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- CSS Bootstrap-->
@@ -233,7 +246,32 @@
                 <div class="total-price">Total Price: {{total_price}}</div>
               </div>
               <hr />
-              <button class="btn btn-primary btn-lg w-100">CHECK OUT</button>
+          
+                
+                <button type="button" class="btn btn-primary btn-lg w-100" data-toggle="modal" data-target="#paymodal">
+                CHECK OUT
+             </button>
+             <div class="modal" id="paymodal">
+              <div class="modal-dialog modal-dialog-centered">
+                 <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                       <h4 class="modal-title">Chọn hình thức thanh toán</h4>
+                       <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                     <a id="momopay" href="momo.html" type="button" class="btn btn-light" ><img src="image/momobut.png" width="120px" height="100px"></a>
+                     <a id="visapay" href="Visa.html" type="button" class="btn btn-light"><img src="image/visabut.png" width="120px" height="100px"></a>
+                    </div>
+                 </div>
+              </div>
+           </div>
+     
+           <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+           
             </div>
           </div>
         </div>
