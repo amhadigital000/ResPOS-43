@@ -1,0 +1,25 @@
+<!-- templates/registration/login.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/login-style.css'%}">
+   <!--- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  -->
+  </head>
+  <body>
+    <div class="container">
+      <h2>Đăng nhập</h2>
+      <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Đăng nhập</button>
+      </form>
+    </div>
+  </body>
+</html>
